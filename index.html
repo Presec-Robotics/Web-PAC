@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <title>P.A.C</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="settings-menu">
+        <div class="group">
+            <label for="rate">Rate: </label>
+            <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+        </div>
+        <div class="group">
+            <label for="pitch">Pitch: </label>
+            <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+        </div>
+        <div class="group">
+            <label for="voice-select">Voice: </label>
+            <select id="voice-select">
+            </select>
+        </div>
+        <div class="group">
+            <label for="lang-select">Language: </label>
+            <select id="lang-select">
+                <option value="en-GB">English (Global)</option>
+                <option value="en-US">English (United States)</option>
+                <option value="es-ES">Enspaniol</option>
+                <option value="fr-FR">Francais</option>
+            </select>
+        </div>
+    </div>
+    <div class="main">
+        <div class="face">
+            <div class="screen">
+                <div class="eye eye_l"></div>
+                <div class="eye eye_r"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+        <div class="result">
+            <p class="prompt"></p>
+            <p class="response" style="display: block;"></p>
+            <p class="error"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
